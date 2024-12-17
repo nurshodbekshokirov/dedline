@@ -1,0 +1,22 @@
+@import './variables';
+
+  @mixin flex-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  @mixin flex-direction {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  @mixin flex-between {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  @mixin gradient-bg($background-gradient-start, $background-gradient-end) {
+    background: radial-gradient(circle at center, $background-gradient-start 100%, $background-gradient-end 100%);
+  }
